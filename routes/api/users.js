@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     User.find()
     .sort({date: -1})
     .then(user => res.json(user));
-    console.log('get in router');
+    
 });
 
 // @route PUT api/items
